@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kahve Satışı</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-h2rAAUgBlzHpU/j8ovdhfrR2fZy6fVW2XOM2HZI3nAJziR6voehpfzy0fPMPb4HS" crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+	 
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Coffee Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+				
+                    <a class="nav-link" href="index.html">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Menü</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="iletişim.html">İletişim</a>
+                </li>
+            
+			 <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="sipariş.html">Sipariş</a>
+                </li>
+            </ul>
+        </div>
+		<ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+				<a class="nav-link" href="#home">Üye Ol</a>
+            </li>
+			 <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="panel.html">Panele git</a></li>
+                        </ul>
+                    </li>
+                </li>
+    </div>
+</nav>
+<section id="siparis" class="py-5">
+<div class="container mt-4">
+    <h1>Admin Kontrol Formu</h1>
+
+    <form id="siparisForm">
+
+        <div class="mb-3">
+            <label for="urun" class="form-label">Ürün seçiniz:</label>
+            <select class="form-select" id="urun" required>
+                <option value="turk kahvesi">Türk Kahvesi</option>
+                <option value="latte">Latte</option>
+                <option value="mocha">Mocha</option>
+            </select>
+        </div>
+		 <div class="mb-3">
+            <label for="urun" class="form-label">Yapmak istediğiniz işlemi seçiniz:</label>
+            <select class="form-select" id="urun" required>
+                <option value="urun ekle">Ürün Ekle</option>
+                <option value="urun cikar">Ürün Çıkar</option>
+            </select>
+        </div>
+		<div class="mb-3">
+            <label for="ad" class="form-label">Ürün Açıklamasını giriniz :</label>
+            <input type="text" class="form-control" id="ad" required>
+        </div>
+	    <div class="mb-3">
+            <label for="adet" class="form-label">Ürünün fiyatını giriniz:</label>
+            <input type="number" class="form-control" id="adet" min="1" required>
+        </div>
+				 <div class="mb-3">
+            <label for="urun" class="form-label">İşlem yaptırmak istediğiniz alanı seçiniz:</label>
+            <select class="form-select" id="urun" required>
+                <option value="gunun kahvesi">Günün Kahvesi</option>
+                <option value="menu">Menü</option>
+				<option value="urunlerimiz">Ürünlerimiz</option>
+                <option value="galeri">Galeri</option>
+            </select>
+        </div>
+		<label class="form-label" for="customFile">Ürünün görselini ekleyiniz</label>
+			<input type="file" class="form-control" id="customFile" />
+<br>
+			<button type="submit" class="btn btn-dark">Onayla</button>
+    </form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>İletişim Bilgileri</h5>
+                <p>Adres: Restoran Adresiniz</p>
+                <p>Telefon: +90 123 456 7890</p>
+                <p>E-posta: info@example.com</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Sosyal Medya</h5>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <p>&copy; 2024 Tüm hakları saklıdır.</p>
+    </div>
+</footer>
